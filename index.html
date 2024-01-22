@@ -37,9 +37,8 @@
 </head>
 
 <body class="theme-font">
-
     <!-- header section -->
-    <header class="container mx-auto">
+    <header class="container mx-auto lg:mb-20 mb-5">
         <!-- navigation bar -->
         <nav>
             <div class="navbar bg-base-100">
@@ -81,12 +80,86 @@
                 </div>
             </div>
         </nav>
-
         <!-- banner section -->
-        <section>
-
+        <section class="p-2 lg:relative">
+            <div class="carousel w-full lg:h-[500px]">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex gap-4 lg:justify-start justify-center lg:bottom-5 bottom-2 left-5 right-5">
+                        <a href="#slide3" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❮</a>
+                        <a href="#slide2" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/hp-1.jpg" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex gap-4 lg:justify-start justify-center lg:bottom-5 bottom-2 left-5 right-5">
+                        <a href="#slide1" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❮</a>
+                        <a href="#slide3" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/hp-2.jpg" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex gap-4 lg:justify-start justify-center lg:bottom-5 bottom-2 left-5 right-5">
+                        <a href="#slide2" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❮</a>
+                        <a href="#slide1" class="lg:py-4 lg:px-6 py-2 px-4 rounded-full bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- badge -->
+            <div
+                class="bg-[#131318] rounded-lg text-white lg:p-8 p-4 lg:space-y-4 space-y-2 lg:w-[500px] w-full lg:absolute bottom-8 right-8">
+                <h3 class="lg:text-2xl text-lg font-extrabold">Meet all the heroes from the field</h3>
+                <p class="lg:text-base text-sm font-medium">Meet All the Heroes from the Field and Uncover Their Stories
+                </p>
+            </div>
         </section>
     </header>
+    <!-- main section start -->
+    <main class="container mx-auto p-2">
+        <!-- progress section -->
+        <hr class="border border-dashed border-[#13131833]">
+        <section class="mt-8 mb-20">
+            <div class="text-center lg:space-y-6 space-y-4 mb-8">
+                <h3 class="lg:text-3xl text-xl font-extrabold">Professional Hockeys Club</h3>
+                <p class="lg:text-base text-sm font-medium">The crowd roared as the puck rocketed past the goalie, the net rippling like a frozen wave. Cheers erupted from the stands</p>
+            </div>
+            <hr class="border border-dashed border-[#13131833]">
+            <!-- card container -->
+            <div class="flex justify-around lg:flex-row flex-col lg:gap-0 gap-10 p-10">
+                <!-- card 1 -->
+                <div class="text-center">
+                    <div class="radial-progress mb-6 text-[#FF4240]" style="--value:87;" role="progressbar"><p class="font-extrabold text-black">87%</p></div>
+                    <h3 class="text-xl font-semibold mb-4">Prayer Facility</h3>
+                    <p>Discover peace in our Prayer Facility</p>
+                </div>
+                <!-- card 2 -->
+                <div class="text-center">
+                    <div class="radial-progress mb-6 text-[#49D293]" style="--value:95;" role="progressbar"><p class="font-extrabold text-black">95%</p></div>
+                    <h3 class="text-xl font-semibold mb-4">Experienced Coach</h3>
+                    <p>Elevate your game with our Experienced Coach</p>
+                </div>
+                <!-- card 3 -->
+                <div class="text-center">
+                    <div class="radial-progress mb-6 text-[#FFB546]" style="--value:90;" role="progressbar"><p class="font-extrabold text-black">90%</p></div>
+                    <h3 class="text-xl font-semibold mb-4">Senior Player</h3>
+                    <p>Experience wisdom in motion with our Senior Player</p>
+                </div>
+                <!-- card 4 -->
+                <div class="text-center">
+                    <div class="radial-progress mb-6 text-[#4C8DF1]" style="--value:80;" role="progressbar"><p class="font-extrabold text-black">80%</p></div>
+                    <h3 class="text-xl font-semibold mb-4">Training Ground</h3>
+                    <p>Refine your skills at our Training Ground</p>
+                </div>
+            </div>
+            <hr class="border border-dashed border-[#13131833]">
+        </section>
+    </main>
 </body>
 
 </html>
