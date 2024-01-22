@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/15816fb69a.js" crossorigin="anonymous"></script>
+    <!-- custom config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        orange: '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- vanilla css -->
     <style>
-        .theme-font{
+        .theme-font {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -24,6 +38,55 @@
 
 <body class="theme-font">
 
+    <!-- header section -->
+    <header class="container mx-auto">
+        <!-- navigation bar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="font-bold text-orange">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- site logo name -->
+                    <a class="text-3xl font-extrabold cursor-pointer" href="index.html">Hockey<span
+                            class="text-orange">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-bold text-orange">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="p-4 cursor-pointer lg:flex hidden"><i
+                            class="fa-solid fa-magnifying-glass text-base"></i></a>
+                    <a class="btn bg-orange text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section>
+
+        </section>
+    </header>
 </body>
 
 </html>
